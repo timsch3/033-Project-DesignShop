@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,400;0,500;0,600;0,800;&display=swap');
+
+/* ==================== CSS reset & general styles */
+:root {
+    letter-spacing: -0.5px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Karla, sans-serif;
+    text-decoration: none;
+}
+body {
+    padding: 50px 100px 10px 100px;
+}
+a {
+    transition: 0.2s;
+    color: #000;
+}
+a:hover {
+    color: #848484;
+}
+
+/* ==================== Header & navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+header > h1 {
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: normal;
+}
+header > nav > ul {
+    display: flex;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+header > nav > ul > li:not(:last-child) {
+    padding-right: 50px;
+}
+
+/* ==================== Shop items */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+/* ---------- All items */
+main > figure > a > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 10px;
+    transition: 0.2s;
+}
+main > figure > a > img:hover {
+    opacity: 0.25;
+}
+main > figure > figcaption > a, main > figure > figcaption > span {
+    color: #323A45;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+main > figure > figcaption > a:hover {
+    color: #848484;
+    transition: 0.2s;
+}
+main > figure > figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+main > figure > p {
+    font-size: 0.7em;
+    color: #848484;
+    padding-top: 5px;
+}
+main > figure {
+    margin-bottom: 65px;
+}
+/* ---------- Wide items */
+main > .wide {
+    grid-column: 1/4;
+}
+/* ---------- Regular items */
+main > .regular:nth(1n) {
+    grid-column: 1/2;
+}
+main > .regular:nth(2n) {
+    grid-column: 2/3;
+}
+main > .regular:nth(3n) {
+    grid-column: 3/4;
+}
+
+/* ==================== Footer */
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    font-size: 0.6em;
+    line-height: 1.5em;
+}
+footer > div:nth-of-type(1), footer > p {
+    grid-column: 1/2;
+}
+footer > div:nth-of-type(2) {
+    grid-column: 2/3;
+}
+footer > div:nth-of-type(3) {
+    grid-column: 3/4;
+}
+footer > div:nth-of-type(4) {
+    grid-column: 4/5;
+}
+footer > div > h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer > p {
+    grid-column: 1/2;
+}
+footer > div:nth-of-type(1) > p > span, footer > div:nth-of-type(even) > ul, footer > div:nth-of-type(3) span {
+    font-weight: 600;
+}
+footer > div:nth-of-type(3) p {
+    font-style: italic;
+}
+footer > p, footer > p > span {
+    padding-top: 50px;
+    color: #848484;
+}
+footer > p > span {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    transform: translateY(0.15em);
+    padding: 0 5px;
+}
