@@ -30,13 +30,13 @@ header {
     padding-bottom: 50px;
 }
 header > h1 {
-    font-size: 0.8em;
+    font-size: 1.1rem;
     font-weight: 800;
     letter-spacing: normal;
 }
 header > nav > ul {
     display: flex;
-    font-size: 0.7em;
+    font-size: 1rem;
     font-weight: 600;
 }
 header > nav > ul > li:not(:last-child) {
@@ -48,6 +48,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 20px;
+    margin-bottom: -50px;
 }
 /* ---------- All items */
 main > figure > a > img {
@@ -62,8 +63,8 @@ main > figure > a > img:hover {
     opacity: 0.25;
 }
 main > figure > figcaption > a, main > figure > figcaption > span {
-    color: #323A45;
-    font-size: 0.7em;
+    color: #555555;
+    font-size: 1rem;
     font-weight: 600;
 }
 main > figure > figcaption > a:hover {
@@ -75,7 +76,8 @@ main > figure > figcaption {
     justify-content: space-between;
 }
 main > figure > p {
-    font-size: 0.7em;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: #848484;
     padding-top: 5px;
 }
@@ -101,8 +103,8 @@ main > .regular:nth(3n) {
 footer {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 1fr;
-    font-size: 0.6em;
-    line-height: 1.5em;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
 }
 footer > div:nth-of-type(1), footer > p {
     grid-column: 1/2;
@@ -117,7 +119,7 @@ footer > div:nth-of-type(4) {
     grid-column: 4/5;
 }
 footer > div > h3 {
-    font-size: 1.1em;
+    font-size: 0.9rem;
     font-weight: 600;
     padding-bottom: 20px;
 }
@@ -136,8 +138,8 @@ footer > p, footer > p > span {
 }
 footer > p > span {
     display: inline-block;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 800;
-    transform: translateY(0.15em);
+    transform: translateY(0.4rem);
     padding: 0 5px;
 }
