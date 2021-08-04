@@ -42,6 +42,9 @@ header > nav > ul {
 header > nav > ul > li:not(:last-child) {
     padding-right: 50px;
 }
+#menuButton {
+    display: none;
+}
 
 /* ==================== Shop items */
 main {
@@ -142,4 +145,37 @@ footer > p > span {
     font-weight: 800;
     transform: translateY(0.4rem);
     padding: 0 5px;
+}
+
+/* ==================== Small devices */
+@media only screen and (max-width: 750px) {
+    /* ---------- Outer padding and navigation */
+    body {
+        padding: 50px 25px 10px 25px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    header > nav > ul {
+        display: none;
+    }
+    #menuButton {
+        display: unset;
+    }
+    /* ---------- Shop items */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* ---------- Footer */
+    footer {
+        display: block;
+    }
+    footer > div > h3 {
+        padding: 20px 0;
+    }
 }
